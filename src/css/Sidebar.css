@@ -1,0 +1,97 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.3;
+  height: 100vh;
+  background-color: var(--discordGray-color);
+}
+
+.sidebar__top {
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: var(--white-color);
+  border-bottom: 3px solid var(--border-color);
+}
+
+.sidebar__channels {
+  flex: 1;
+  color: var(--gray-color);
+  overflow-y: scroll;
+}
+
+.sidebar__channels::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar__channels {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.sidebar__channelsHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar__header > h4 {
+  margin-left: 10px;
+}
+
+.sidebar__addChannel {
+  cursor: pointer;
+}
+
+.sidebar__addChannel:hover {
+  transition: color 0.2s ease-out;
+  color: var(--white-color);
+}
+
+.sidebar__voice,
+.sidebar__profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: var(--gray-color);
+  border-top: 1px solid var(--gray-color);
+}
+
+.sidebar__voiceIcon,
+.sidebar__voiceInfo > h3 {
+  color: var(--green-color);
+}
+
+.sidebar__voiceInfo,
+.sidebar__profileInfo {
+  flex: 1;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.sidebar__profile > .MuiAvatar-root {
+  cursor: pointer;
+}
+
+.sidebar__voiceInfo > p {
+  font-size: smaller;
+}
+
+.sidebar__voiceIcons > .MuiSvgIcon-root,
+.sidebar__profileIcons > .MuiSvgIcon-root {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.sidebar__profileInfo > h3 {
+  color: var(--white-color);
+}

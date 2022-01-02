@@ -1,0 +1,24 @@
+:root {
+  --discordGray-color: #2f3135;
+  --white-color: #fff;
+  --border-color: #26282c;
+  --gray-color: #808080;
+  --green-color: #4fb185;
+  --sidebarChannel-bg-color: #40464b;
+  --darkGray-color: #363a3f;
+  --lightGray-color: #d3d3d3;
+  --chatInput-bg-color: #474b53;
+  --button-bg-color: #738adb;
+  --button-text-color: #eff2f5;
+}
+
+.app {
+  display: flex;
+}
+
+@media only screen and (min-width: 1300px) {
+  .app {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
